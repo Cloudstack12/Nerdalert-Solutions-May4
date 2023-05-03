@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global Styles */
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px 10%;
+  background: #f5f5f5;
+}
+
+a{
+  text-decoration: none;
+}
+
+  a.gien:link {	
+	color: white;
+}
+
+	a.gien:visited {
+  	color: white;
+}
+
+	a.gien:hover {
+  	color: red;
+}
+
+	a.gien:active {
+  	color: white;
+} 
+
+
+  a.gien1:link {	
+	color: red;
+}
+
+	a.gien1:visited {
+  	color: red;
+}
+
+	a.gien1:hover {
+  	color: black;
+}
+
+	a.gien1:active {
+  	color: red;
+} 
+/* Container Styles */
+.container {
+  display: flex;
+  height: 89vh;
+}
+.main-wrapper{
+  flex: 2;
+  overflow-y: scroll;
+}
+.side-bar{
+  background: #faf9f9;
+  flex: .5;
+  padding: 40px;
+  /* background-color: white; */
+}
+
+.side-bar ul{
+  padding: 0 40px;
+  list-style: none;
+}
+
+.side-bar{
+  background: rgb(230, 230, 231);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .side-bar{
+    background: #114;
+    color: white !important;
+  }
+  .side-bar a{
+    color: white !important;
+  }
+}
+
+
+
+/* Navigation Menu Styles */
+
+nav.nav-menu {
+  width: 100%;
+  background-color: #15222b;
+  padding: 0px;
+}
+
+nav.nav-menu ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: clamp(.8rem, 1.2vw, 2rem); 
+}
+
+.nav-menu .nav-item {
+  padding: 15px;
+  transition: background-color 500ms ease-in-out;
+}
+
+.nav-menu .nav-item:hover {
+  cursor: pointer;
+  background-color: #f5f5f54d;
+}
+
+.nav-menu .nav-item a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Main Content Wrapper Styles */
+.main-wrapper {
+  background: white;
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section.head,
+section.youtube-embed {
+  text-align: center;
+}
+
+.button-link {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px 50px;
+  width: fit-content;
+  background: #fa0012;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s transform ease-in-out;
+}
+
+.button-link:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 50px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 20px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+
+ul{
+  padding-left: 30px;
+  }
+  
+  .side ul{
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    font-family: "Cormorant SC", sans-serif;
+    font-size:30px;
+
+  }
+
+  ol{
+    padding-left: 40px;
+    }
+    
+    .side ol{
+      text-align: justify;
+      margin-bottom: 10px;
+      line-height: 1.5rem;
+      font-family: "Cormorant SC", sans-serif;
+      font-size:30px;
+  
+    }
+
+p {
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  float: left;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+img.gien {
+    max-width: 100%;
+    float: left;
+    border: 0px solid white;
+    border-radius: 0px;
+    margin: 15px;
+  }
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.two-col div {
+  width: 50%;
+}
+
+    .hero-gien {
+   
+    background-image: linear-gradient(rgba(71, 71, 71, 0.5), rgba(77, 77, 77, 0.5)), url("https://lh3.googleusercontent.com/0DPESnU4WYQ0E6aZvs0SpSC_ahgTsY1KYoYVhfOb_dNaQAsbVIeW5MxHI8QYD6FHZQib_QmcgA0uFfOUF_3Mpf_1jWvHJfiG14IogY3CJA");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+  
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-30%, -40%);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    width: 80%;
+  }
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 0;
+  }
+
+  .two-col {
+    flex-direction: column;
+  }
+
+  .two-col div {
+    width: 100%;
+  }
+
+  .main-wrapper {
+    padding: 5%;
+  }
+}
